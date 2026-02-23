@@ -1,0 +1,11 @@
+{
+  "expenses": [
+    {
+      "title": "food",
+      "amount": 50,
+      "category": "food"
+    }
+  ],
+  "budget": 400,
+  "balance": 350
+}

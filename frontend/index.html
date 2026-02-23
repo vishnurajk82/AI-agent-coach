@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Expense Coach</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>💸 AI Expense Coach</h1>
+
+<!-- 🔥 Budget Section -->
+<h3>Set Monthly Budget</h3>
+<input type="number" id="budget" placeholder="Enter budget">
+<button onclick="setBudget()">Set Budget</button>
+
+<h3>Remaining Balance</h3>
+<p id="balance">₹0</p>
+
+<hr>
+
+<!-- 🔥 Expense Section -->
+<h3>Add Expense</h3>
+
+<input type="text" id="title" placeholder="Expense name">
+<input type="number" id="amount" placeholder="Amount">
+<input type="text" id="category" placeholder="Category (food, travel, clothes...)">
+
+<br><br>
+
+<button onclick="addExpense()">Add Expense</button>
+
+<h3>Expenses</h3>
+<ul id="list"></ul>
+
+<h3>AI Advice</h3>
+<p id="advice"></p>
+
+<!-- 🔥 Chart -->
+<canvas id="chart" width="400" height="200"></canvas>
+
+</div>
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
